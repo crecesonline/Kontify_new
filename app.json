@@ -1,0 +1,61 @@
+{
+  "expo": {
+    "name": "Kontify: Tu Asesor Fiscal y Legal Impulsado por IA",
+    "slug": "kontify-app",
+    "scheme": "kontify",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "sdkVersion": "54.0.0",
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/icon.png",
+        "backgroundColor": "#000000"
+      },
+      "permissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.CAMERA",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE"
+      ],
+      "package": "com.desibarra.onspaceapp"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#000000"
+        }
+      ]
+    ],
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "49d21666-13e1-4be8-bfbf-8693d8b88259"
+      }
+    },
+    "owner": "desibarra",
+    "web": {
+      "favicon": "./assets/images/favicon.png",
+      "name": "Kontify: Tu Asesor Fiscal y Legal Impulsado por IA",
+      "shortName": "Kontify",
+      "description": "La plataforma SaaS más rápida para conectar con expertos legales y fiscales con el soporte de Inteligencia Artificial.",
+      "lang": "es",
+      "themeColor": "#92BF4E",
+      "backgroundColor": "#000000",
+      "startUrl": "/",
+      "display": "standalone",
+      "bundler": "metro",
+      "output": "static"
+    }
+  }
+}
